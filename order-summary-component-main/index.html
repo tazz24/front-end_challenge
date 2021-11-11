@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <style>
+    @font-face {
+      font-family: RedHatDisplay;
+      src: url('../order-summary-component-main/static/RedHatDisplay-Regular.ttf');
+    }  
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-image: url(images/pattern-background-desktop.svg);
+      font-size:16px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+    footer{
+      text-align: center;
+      float: right;
+      margin-top: 10%;
+    }
+    @media screen and (min-width: 100px) and (max-width: 375px){
+      body{
+        background-image: url('../order-summary-component-main/images/pattern-background-mobile.svg')
+      } 
+    } 
+    .order{
+      display: block;
+      margin: 10rem 0 0;
+    }
+    .hero img{
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+    }
+    .content{
+      background-color: rgb(255, 255, 255);
+      margin-top: -25px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+      height: max-content;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .content-title{
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);
+      padding: 2.5rem 0 0;
+
+    }
+    .content-body{
+      word-wrap: break-word;
+      color: hsl(224, 23%, 55%);
+      display: block;
+      align-items: center;
+      width: max-content;
+      max-width: 35ch ;
+      padding-left:5rem;
+    }
+    .music-change{
+      width: 280px;
+      height:50px;
+      background-color:  hsl(225, 100%, 94%);
+      display: block;
+      text-align: center;
+      padding-left:1.5rem;
+      align-items: center;
+      margin: auto;
+      border-radius: 10px;
+      padding: 15px 10px;
+    }
+    .music-change img{
+      margin-left: -5px;
+      float: left;
+     
+    }
+    .music-change a{
+      color:hsl(245, 75%, 52%);
+      text-decoration: underline;
+      float:right;
+      margin-top: -10%;
+    }
+    .music-change p{
+      float: left;
+      margin-left: 10px;
+      margin-top: -0.1rem;
+      color:hsl(223, 47%, 23%);
+    }
+    .music-change span{
+      float: left;
+      margin-right: 55%;
+      padding-left: 7px;
+      color:hsl(224, 23%, 55%);
+    }
+    .buttons{
+      display: block;
+    }
+    .buttons button{
+      width: 300px;
+      height: 40px;
+      margin-top:10px;
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      color: hsl(225, 100%, 98%);
+    }
+    .buttons a{
+      margin-top: 10px;
+      color: hsl(224, 23%, 55%);
+    }
+  </style>
+</head>
+<body>
+  <div class="order">
+    <div class="hero">
+      <img src='../order-summary-component-main/images/illustration-hero.svg'>
+    </div>
+    <div class="content">
+      <h1 class="content-title"> Order Summary</h1>
+      <p class="content-body"> You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+        <div class="music-change">
+          <img src='../order-summary-component-main/images/icon-music.svg'>
+          
+          <p>Annual Plan</p>
+          <span>$59.99/year</span>
+         
+          <a href="#">Change</a>
+        
+        </div>
+      <div class="buttons">
+        <button>Proceed to Payment</button>
+        <br>
+        <a href="#">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br> 
+      Coded by <a href="#">Ciuclea Razvan-Constantin</a>.
+    </div>
+  </footer>
+</body>
+</html>
