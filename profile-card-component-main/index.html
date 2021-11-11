@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @media (min-width: 375px) {
+      
+  
+    .attribution { font-size: 13px; text-align: center; }
+    .attribution a { color: hsl(0, 3%, 13%); }
+    body{
+      text-align: center;
+      width: auto;
+      height:auto;
+      font-size: 18px;
+      background-color:  hsl(185, 75%, 39%);
+      background-image: url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+      background-position: 125% 400px, -200px 350%;
+      background-repeat: no-repeat;
+      /* position: absolute; */
+    }
+    
+    footer{
+      float:right;
+      margin-top:30px;
+    
+    }
+
+    .card{
+      background-color: white;
+      background-size: cover;
+      height: auto;
+      width: 350px;
+      margin:220px 40%;
+      /* margin: auto; */
+      display: block;
+      border-radius: 10px;
+    }
+    .superior img{
+        height: 140px;
+        width: 100%;
+        /* border:1px solid black; */
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .mijloc img{
+      border-radius:100%;
+      border: 5px solid white;
+      margin-top: -55px;
+    }
+    .mijloc p{
+      color: hsl(229, 23%, 23%);
+      font-weight: 700;
+      margin-left: 1.2ch;
+    }
+    .mijloc span{
+      color:hsl(227, 10%, 46%);
+      line-break: auto;
+      display: inline;
+      margin-left: 5px;
+      font-weight: 400;
+    }
+    p.loc{
+      color:hsl(227, 10%, 46%);
+      font-weight: 400;
+      padding: 5px;
+      margin: -15px auto auto auto;
+    }
+  .inferior{
+    /* border: 3px solid red; */
+    border-top: 1px double hsl(0, 0%, 59%);
+    margin-top:10px;
+    padding: 10px 50px;
+  }
+  p.valori{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    word-spacing: 50px;
+    padding-left: 3%;
+
+  }
+  p.criterii{
+    font-weight: 400;
+    color:hsl(227, 10%, 46%);
+    word-spacing: 3.5ch;
+    padding-right: 2%;
+    margin-top: -15px;
+  }
+} 
+@media(max-width:1440px)
+{.attribution { font-size: 13px; text-align: center; }
+    .attribution a { color: hsl(0, 3%, 13%); }
+    body{
+      text-align: center;
+      width: auto;
+      height:auto;
+      font-size: 18px;
+      background-color:  hsl(185, 75%, 39%);
+      background-image: url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+      background-position: 125% 400px, -200px 350%;
+      background-repeat: no-repeat;
+      /* position: absolute; */
+    }
+    
+    footer{
+      float:right;
+      margin-top:30px;
+    
+    }
+
+    .card{
+      background-color: white;
+      background-size: cover;
+      height: auto;
+      width: 350px;
+      margin:220px 40%;
+      /* margin: auto; */
+      display: block;
+      border-radius: 10px;
+    }
+    .superior img{
+        height: 140px;
+        width: 100%;
+        /* border:1px solid black; */
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .mijloc img{
+      border-radius:100%;
+      border: 5px solid white;
+      margin-top: -55px;
+    }
+    .mijloc p{
+      color: hsl(229, 23%, 23%);
+      font-weight: 700;
+      margin-left: 1.2ch;
+    }
+    .mijloc span{
+      color:hsl(227, 10%, 46%);
+      line-break: auto;
+      display: inline;
+      margin-left: 5px;
+      font-weight: 400;
+    }
+    p.loc{
+      color:hsl(227, 10%, 46%);
+      font-weight: 400;
+      padding: 5px;
+      margin: -15px auto auto auto;
+    }
+  .inferior{
+    /* border: 3px solid red; */
+    border-top: 1px double hsl(0, 0%, 59%);
+    margin-top:10px;
+    padding: 10px 50px;
+  }
+  p.valori{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    word-spacing: 50px;
+    padding-left: 3%;
+
+  }
+  p.criterii{
+    font-weight: 400;
+    color:hsl(227, 10%, 46%);
+    word-spacing: 3.5ch;
+    padding-right: 2%;
+    margin-top: -15px;
+  }
+
+}
+
+  </style>
+
+</head>
+<body>
+  <div class="card">
+    <div class="superior">
+      <img src="../profile-card-component-main/images/bg-pattern-card.svg">
+
+    </div>
+    <div class="mijloc">
+      <img src="../profile-card-component-main/images/image-victor.jpg">
+      
+      <p >Victor Crest  <span>26</span></p>
+      <p class="loc"> London</p>
+
+    </div>
+    <div class="inferior"> 
+        <p class="valori">
+          80K  803K   1.4K
+        </p>
+      <p class="criterii">
+        Followers Likes Photos
+      </p>
+    </div>
+  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</br>
+      Coded by <a href="#">Ciuclea Razvan-Constantin</a>.
+    </div>
+  </footer>    
+</body>
+</html>
