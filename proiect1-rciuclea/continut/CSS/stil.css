@@ -1,0 +1,125 @@
+h1{
+    color:rgb(85, 16, 31);
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px;
+    text-align: center;
+    text-shadow: 2px 2px 5px red
+  }
+
+  h2{
+    font-size: 40px;
+    color:black;
+    text-shadow: 2px 2px 5px black;
+    
+  }
+ 
+  .index{
+    text-align: center;
+  }
+
+html {
+  height: auto;
+}
+body {
+  
+  background-image: url(' ../imagini/imagine.jpg ');
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+ 
+}
+iframe{
+  box-shadow: 10px 10px 5px grey;
+}
+
+
+
+.nav {
+  background-color: rgb(171, 159, 127);
+  opacity: 0.8;
+  background-position: 90px;
+  overflow: hidden;
+  padding-left: 400px;
+  border-radius: 80px;
+  border-style: solid;
+  margin: auto;
+  border: 10px solid transparent;
+  
+  border-image: url('../imagini/border.png') 5% round;
+  transition: width 2s;
+  
+}
+
+.nav a {
+  float: left;
+  color: rgb(255,255,255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+  
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+  width: 150px;
+}
+
+.nav a:active {
+  background-color: rgb(148, 131, 131);
+  color: rgb(255, 0, 0);
+}
+
+fieldset{
+  
+  background-color: rgb(211, 211, 211);
+  border-radius: 5px;
+  border-top: 20px;
+  
+}
+
+
+table,th,td{
+  border:1px solid black;
+  
+}
+th{
+  text-align: center;
+ 
+}
+table{
+  width: auto;
+  border-radius: 2px;
+ }
+
+
+
+input[type=button] {
+  width: 10%;
+  background-color: rgb(218,212,204);
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+input[type=text], select,input[type=password],input[type=email],input[type=tel],input[type=date],input[type=time],input[type=url]{
+  width: 10%;
+  padding: 6px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+}

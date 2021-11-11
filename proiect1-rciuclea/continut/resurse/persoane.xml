@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>09</numar>
+            <localitatea>Arad</localitatea>
+            <judet>Arad</judet>
+            <tara>Romania</tara>
+         </adresa>
+    </persoana>
+
+    <persoana id="2">
+        <nume>Portariuc</nume>
+        <prenume>Vasile</prenume>
+        <varsta>44</varsta>
+        <adresa>
+            <strada>Octav Bancila</strada>
+            <numar>10</numar>
+            <localitatea>Saveni</localitatea>
+            <judet>Botosani</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <meserie>
+            <slujba>Mecanic Auto</slujba>
+            <salar>1500 lei</salar>
+        </meserie>
+        <familie>
+            <sotie>Ana</sotie>
+            <copil>Bob</copil>
+        </familie>
+    </persoana>
+    <persoana id="3">
+        <nume>Gheorghe</nume>
+        <prenume>Vasi</prenume>
+        <varsta>68</varsta>
+        <adresa>
+            <strada>Primaverii</strada>
+            <numar>24</numar>
+            <localitatea>Botosani</localitatea>
+            <judet>Botosani</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <meserie>
+            <slujba>Pensionar</slujba>
+            <salar>2500 lei</salar>
+        </meserie>
+        <familie>
+            <sotie>Loredana</sotie>
+            <nepot>Marius</nepot>
+        </familie>
+    </persoana>
+</persoane>

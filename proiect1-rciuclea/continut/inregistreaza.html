@@ -1,0 +1,62 @@
+
+<section>
+  
+   <div>   
+       <br/><br/>
+        <fieldset>
+            <legend>Informatii generale:</legend>
+            <label for="fname">Nume utilizator</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="pwd">Parola</label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <label for="fname">Nume</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Prenume</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="name" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+        </fieldset> 
+
+        <fieldset>
+            <legend>Informatii personale:</legend>
+            <label>Sexul</label>
+            <select>
+                <option value ="Masculin">Masculin</option>
+                <option value ="Feminin">Feminin</option>
+            </select>
+            <br/>
+            <label>Mâncare preferata</label>
+            <input list="mancare" name ="food">
+            <datalist>
+                    <option value="Snitel de pui">
+                    <option value="Burger">
+                    <option value="Pizza">
+                    <option value="Ciorba">
+                    <option value="Peste cu mamaliga">
+            </datalist>
+            <br/>
+            <label for="favcolor">Culoarea preferata</label>
+            <input type="color" id="favcolor" name="culoare" value="#ff0000">
+            <br/>
+            <label for="birthday">Data nasterii</label>
+            <input type="date" id="birthday" name="birthday">
+            <br/>
+            <label for="time">Ora nasterii</label>
+            <input type ="time">
+            <br/>
+            <label for="age">Vârsta </label>
+            <input type="range" min="18" max="60">
+            <br/>
+            <label for="homepage">Adresa paginii</label>
+            <input type="url" id="homepage" name="homepage">
+            <br/>
+            <label for ="textare">Descriere</label>
+            <textarea id="textae" rows=6 cols=50></textarea>
+
+        </fieldset>
+        <br/><br/>
+        <input type ="button" value="Inregistrare">
+       </div>
+    </section>
