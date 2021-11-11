@@ -1,0 +1,76 @@
+<header>
+    <div class="logo">
+        
+        <h1 style ="color: white;padding-top: 50px; font-size: 40px;">Libraria online</h1>
+        </div>
+       
+        <nav>
+            <ul>
+               <li> <a href="http://localhost:6789/index">HOME</a>  </li>
+               <li> <a href="http://localhost:6789/books.html">BOOKS</a>  </li>
+               <li> <a href="http://localhost:6789/student_login.html">STUDENT_LOGIN</a>  </li>
+               <li> <a href="about.html">COMMENTS</a>  </li>
+            
+            </ul>
+        </nav>
+
+</header>
+<section style="background-image: url('../Imagini/book.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    
+    <input class="button" type="submit" value="CreareBD" id="creare"> &nbsp;&nbsp;&nbsp;
+    <input class="button" type="submit" value="InserareBD" id="inserare"> &nbsp;&nbsp;&nbsp;
+    <input class="button" type="submit" value="StergereBD" id= "stergere">   &nbsp;&nbsp;&nbsp;
+    <input class="button" type="submit" value="Stergere obiect" id= "stergere_obiect">   
+     <br/><br/>
+    &nbsp;&nbsp;&nbsp; 
+    <% for(var produs of produse){ %>
+        <tr>
+          <th>Numele cartii:</th> 
+          <td><%=produs.Nume %></td>
+          <br/>
+        </tr>
+        <tr>
+            &nbsp; &nbsp;  <th>Pret:</th> 
+            <td> <%=produs.Pret %> </td>
+        
+          <td><button id="adaugare-cos" class=<%=produs._id %> > Adauga</button></td>
+        </tr>
+        <br/><br/>
+        <% } %>
+
+
+
+</section>
+<footer>
+    <p id="data"></p>
+    <p id ="browser"></p>
+    <p id ="version_browser"></p>
+    <body onload="afisareDetalii()"></body>
+</footer>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type='text/javascript'>
+$(document).ready(function() {
+    $(".button").click(function(e) {
+                e.preventDefault();
+                if(e.target.id=='inserare')
+                {
+                $.get(url="/inserareBD");
+                 
+                }
+                if(e.target.id=='creare')
+                {
+                $.get(url="/creareBD");
+                }
+                if(e.target.id=='stergere')
+                {
+                $.get(url="/stergereBD");
+                }
+                if(e.target.id=='stergere_obiect')
+                {
+                $.get(url="/stergere_obiect");
+                }
+            });
+});
+</script>
